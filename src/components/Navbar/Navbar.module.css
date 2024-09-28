@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins';
+}
+.navicon {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Initially hide the bar icon */
+  }
+  @media (max-width: 750px) {
+    .navicon {
+      display: block;
+    }
+  } 
+  .nav{
+    display: flex;
+    justify-content: center;
+}
+.navb{
+    font-family: 'Poppins';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    height: 90px;
+    padding: 0% 4%;
+}
+.navb h1{
+    font-family:'Poppins';
+    font-size: 180%;
+    font-weight: 600;
+}
+.navb1{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.navic{
+    color: black;
+    font-size: 21px;
+}
+.lk{
+    font-size:70%;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.lk1{
+    padding: 2% 4%;
+    font-size: 100%;
+    font-weight: 500;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    transition: 600ms;
+}
+.lk1:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+    border: 2px solid rgb(63, 62, 62);
+}
+@media screen and (max-width:756px) and (min-width: 250px){
+    .navb1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #ebebeb;
+        width: 100%;
+        z-index: 999;
+        margin-top: 5%;
+        align-items: center;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        padding:3%;
+        font-weight: 600;
+        border: 1px solid rgb(176, 176, 176);
+    }
+    .lk{
+        padding-top: 10px;
+        justify-content: start;
+    }
+    .navb{
+        width: 100%;
+    }
+    .nav{
+        padding: 0% 3%;
+    }
+}
